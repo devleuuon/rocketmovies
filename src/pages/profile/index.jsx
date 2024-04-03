@@ -1,9 +1,12 @@
+import { Back } from "../../components/Back";
 import { Container } from "./styles";
 
 export function Profile() {
     return(
         <Container>
-            <header></header>
+            <header>
+                <Back />
+            </header>
         </Container>
     )
 }
