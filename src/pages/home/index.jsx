@@ -3,7 +3,7 @@ import { FiPlus } from 'react-icons/fi'
 import { Header } from "../../components/header";
 import { Section } from "../../components/section";
 import { Button } from "../../components/button";
-import { Card } from "../../components/card";
+import { CardMovie } from "../../components/card";
 
 
 export function Home() {
@@ -21,7 +21,7 @@ export function Home() {
             />
             </div>
 
-            <Card />
+            <CardMovie />
             </Content>
         </Container>
     )
