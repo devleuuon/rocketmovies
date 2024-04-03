@@ -8,6 +8,7 @@ export default {
         BG_INPUT: "#262529",
         BG_PROFILE: "#FF859B0D",
         BORDER_BOTTOM: "#3E3B47",
-        TEXT_CARD: "#999591"
+        TEXT_CARD: "#999591",
+        DARK: "#312E38"
     }
 }

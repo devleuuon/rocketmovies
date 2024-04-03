@@ -1,9 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    color: ${({ theme }) => theme.COLORS.PINK};
 
     display: flex;
     align-items: center;
     gap: .8rem;
+
+button {
+        color: ${({ theme }) => theme.COLORS.PINK};
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+    }
+
+    svg {
+        color: ${({ theme }) => theme.COLORS.PINK};
+    }
 `

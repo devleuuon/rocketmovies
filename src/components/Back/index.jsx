@@ -5,7 +5,7 @@ export function Back() {
     return(
         <Container>
             <FiArrowLeft />
-            Voltar
+            <button>Voltar</button>
         </Container>
     )
 }
