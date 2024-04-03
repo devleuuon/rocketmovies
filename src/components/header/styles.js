@@ -7,6 +7,7 @@ export const Container = styled.header`
     padding: 2.4rem 12.3rem;
 
     border-bottom: .1rem solid ${({ theme }) => theme.COLORS.BORDER_BOTTOM};
+    margin-bottom: 4.5rem;
 `
 
 export const Profile = styled.div`

@@ -7,6 +7,7 @@ export default {
         PLACEHOLDER: "#948F99",
         BG_INPUT: "#262529",
         BG_PROFILE: "#FF859B0D",
-        BORDER_BOTTOM: "#3E3B47"
+        BORDER_BOTTOM: "#3E3B47",
+        TEXT_CARD: "#999591"
     }
 }
