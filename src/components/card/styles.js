@@ -31,7 +31,6 @@ export const Card = styled.div`
 
     h3 {
         font-size: 2.4rem;
-        margin-bottom: .8rem;
     }
 
     P {
