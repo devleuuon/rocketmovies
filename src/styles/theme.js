@@ -9,6 +9,7 @@ export default {
         BG_PROFILE: "#FF859B0D",
         BORDER_BOTTOM: "#3E3B47",
         TEXT_CARD: "#999591",
-        DARK: "#312E38"
+        DARK: "#312E38",
+        BLACK: "#0D0C0F"
     }
 }
