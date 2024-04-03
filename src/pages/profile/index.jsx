@@ -8,7 +8,7 @@ export function Profile() {
     return(
         <Container>
             <header>
-                <Back />
+                <Back title="Voltar" />
             </header>
 
             <Form>

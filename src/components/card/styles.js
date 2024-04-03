@@ -15,19 +15,19 @@ export const Card = styled.div`
 
     overflow-y: auto;
 
-    /* ::-webkit-scrollbar-track {
+    &::-webkit-scrollbar-track {
         background: orange; 
 }
 
-    ::-webkit-scrollbar {
+    &::-webkit-scrollbar {
     width: 6px;
     background: red;
 }
 
-    ::-webkit-scrollbar-thumb {
+    &::-webkit-scrollbar-thumb {
     background: blue;
     border-radius: 10px;
-} */
+}
 
     h3 {
         font-size: 2.4rem;

@@ -1,11 +1,11 @@
 import { Container } from "./styles";
 import {FiArrowLeft } from 'react-icons/fi'
 
-export function Back() {
+export function Back({ title }) {
     return(
         <Container>
             <FiArrowLeft />
-            <button>Voltar</button>
+            <button>{title}</button>
         </Container>
     )
 }
