@@ -16,16 +16,16 @@ export const Card = styled.div`
     overflow-y: auto;
 
     &::-webkit-scrollbar-track {
-        background: orange; 
+        background: transparent; 
 }
 
     &::-webkit-scrollbar {
     width: 6px;
-    background: red;
+    background: transparent;
 }
 
     &::-webkit-scrollbar-thumb {
-    background: blue;
+    background: ${({ theme }) => theme.COLORS.PINK};
     border-radius: 10px;
 }
 
