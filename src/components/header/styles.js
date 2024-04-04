@@ -30,6 +30,11 @@ export const Profile = styled.div`
     strong {
         font-size: 1.8rem;
         white-space: nowrap;
+        color: ${({ theme }) => theme.COLORS.WHITE};
+    }
+
+    span {
+        color: ${({ theme }) => theme.COLORS.WHITE};
     }
     
     .profile {

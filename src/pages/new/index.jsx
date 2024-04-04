@@ -5,6 +5,7 @@ import { Section } from '../../components/section'
 import { Input } from '../../components/input'
 import { NoteItem } from '../../components/noteitem'
 import { Button } from '../../components/button'
+import { Link } from "react-router-dom";
 
 export function New() {
     return(
@@ -12,7 +13,9 @@ export function New() {
             <Header />
 
             <Form>
+                <Link to="/">
                 <Back title="Voltar" />
+                </Link>
 
                 <Section title="Novo filme" />
 

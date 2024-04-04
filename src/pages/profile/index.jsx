@@ -3,12 +3,15 @@ import { Container, Avatar, Form } from "./styles";
 import { FiCamera, FiUser, FiMail, FiLock } from 'react-icons/fi'
 import { Input } from "../../components/input";
 import { Button } from '../../components/button';
+import { Link } from "react-router-dom";
 
 export function Profile() {
     return(
         <Container>
             <header>
+                <Link to="/">
                 <Back title="Voltar" />
+                </Link>
             </header>
 
             <Form>

@@ -12,6 +12,7 @@ export const Card = styled.div`
     padding: 3.2rem;
     border-radius: 1.6rem;
     background-color: ${({ theme }) => theme.COLORS.BG_PROFILE};
+    cursor: pointer;
 
     overflow-y: auto;
 

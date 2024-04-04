@@ -3,6 +3,7 @@ import { TitleLogin } from '../../components/titlelogin'
 import { Input } from '../../components/input'
 import { Button } from '../../components/button'
 import { FiMail, FiLock} from 'react-icons/fi'
+import { Link } from "react-router-dom";
 
 export function SignIn() {
     return(
@@ -29,7 +30,7 @@ export function SignIn() {
                 <Button title="Entrar"/>
 
 
-                <a href="#">Criar Conta</a>
+                <Link to="/signup">Criar Conta</Link>
                 
             </Form>
 

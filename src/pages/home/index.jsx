@@ -15,10 +15,13 @@ export function Home() {
             <div className="header">
             <Section title="Meus Filmes"/>
 
-            <Button 
+
+            
+            <Button to="/new"
             icon={FiPlus}
             title="Adicionar filmes"
             />
+
             </div>
 
             <CardMovie />

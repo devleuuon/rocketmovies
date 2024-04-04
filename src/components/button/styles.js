@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Container = styled.button`
+export const Container = styled(Link)`
     width: 100%;
     height: 5.6rem;
     border: none;
     border-radius: 1.0rem;
     background-color: ${({ theme }) => theme.COLORS.PINK};
     color: ${({ theme }) => theme.COLORS.DARK};
+    display: flex;
 
     > button {
         width: 100%;

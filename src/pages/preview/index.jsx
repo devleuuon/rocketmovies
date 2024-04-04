@@ -5,6 +5,7 @@ import { Stars } from '../../components/stars'
 import { User } from '../../components/user'
 import { IoTimeOutline } from 'react-icons/io5'
 import { ButtonTextPreview } from '../../components/buttontextpreview'
+import { Link } from "react-router-dom";
 
 export function Preview() {
     return(
@@ -12,7 +13,9 @@ export function Preview() {
             <Header />
             <Content>
 
+            <Link to="/">
             <Back title="Voltar"/>
+            </Link>
 
             <div className="title">
                 <h2>Interestellar</h2>
