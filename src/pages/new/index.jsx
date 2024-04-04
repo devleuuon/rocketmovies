@@ -1,16 +1,17 @@
-import { Container, Content } from "./styles";
+import { Container, Form, Content } from "./styles";
 import { Header } from '../../components/header'
 import { Back } from '../../components/Back'
 import { Section } from '../../components/section'
 import { Input } from '../../components/input'
 import { NoteItem } from '../../components/noteitem'
+import { Button } from '../../components/button'
 
 export function New() {
     return(
         <Container>
             <Header />
 
-            <Content>
+            <Form>
                 <Back title="Voltar" />
 
                 <Section title="Novo filme" />
@@ -31,13 +32,23 @@ export function New() {
 
                 <h3>Marcadores</h3>
 
-            </Content>
+                <Content>
 
                 <div className="tags">
                 <NoteItem placeholder="React" />
                 <NoteItem isNew placeholder="Novo marcador"/>
                 </div>
-    
+
+
+                </Content>
+
+                <div className="button">
+
+                <button id="button" type="button">Excluir Filme</button>
+
+                <Button title="Salvar alterações" />
+                </div>
+            </Form>
         </Container>
     )
 }
