@@ -14,7 +14,7 @@ export function Header() {
 
                 <div className="profile">
 
-                    <Link to="/profile">
+                    <Link to="/rocketmovies/profile">
                     <strong>Lennon Fonseca</strong>
                     </Link>
 

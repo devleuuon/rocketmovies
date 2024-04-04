@@ -6,8 +6,8 @@ import { SignUp } from '../pages/signup'
 export function AuthRoutes() {
     return(
         <Routes>
-            <Route path="/" element={<SignIn />} />
-            <Route path="/signup" element={<SignUp />} />
+            <Route path="/rocketmovies/" element={<SignIn />} />
+            <Route path="/rocketmovies/signup" element={<SignUp />} />
         </Routes>
     )
 }

@@ -13,7 +13,7 @@ export function Preview() {
             <Header />
             <Content>
 
-            <Link to="/">
+            <Link to="/rocketmovies/">
             <Back title="Voltar"/>
             </Link>
 

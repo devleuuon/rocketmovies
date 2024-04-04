@@ -30,7 +30,7 @@ export function SignIn() {
                 <Button title="Entrar"/>
 
 
-                <Link to="/signup">Criar Conta</Link>
+                <Link to="/rocketmovies/signup">Criar Conta</Link>
                 
             </Form>
 

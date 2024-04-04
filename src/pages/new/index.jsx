@@ -13,7 +13,7 @@ export function New() {
             <Header />
 
             <Form>
-                <Link to="/">
+                <Link to="/rocketmovies/">
                 <Back title="Voltar" />
                 </Link>
 

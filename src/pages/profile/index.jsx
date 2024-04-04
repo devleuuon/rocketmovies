@@ -9,7 +9,7 @@ export function Profile() {
     return(
         <Container>
             <header>
-                <Link to="/">
+                <Link to="/rocketmovies/">
                 <Back title="Voltar" />
                 </Link>
             </header>

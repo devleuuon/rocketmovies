@@ -36,7 +36,7 @@ export function SignUp() {
 
                 <Button title="Cadastrar"/>
 
-                <Link to="/">
+                <Link to="/rocketmovies/">
                 <Back title="Voltar para o login" />
                 </Link>
 

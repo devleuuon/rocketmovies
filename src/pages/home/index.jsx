@@ -17,7 +17,7 @@ export function Home() {
 
 
             
-            <Button to="/new"
+            <Button to="/rocketmovies/new"
             icon={FiPlus}
             title="Adicionar filmes"
             />
