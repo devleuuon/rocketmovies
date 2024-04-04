@@ -1,10 +1,12 @@
 import { Container, Card } from "./styles";
 import { ButtonText } from "../../components/buttontext";
 import { Stars } from "../stars";
+import { Link } from "react-router-dom";
 
 export function CardMovie() {
     return(
         <Container>
+                <Link to="/rocketmovies/preview">
             <Card>
                 <h3>Interestellar</h3>
 
@@ -19,8 +21,9 @@ export function CardMovie() {
                 <ButtonText title="Drama" />
                 <ButtonText title="Família" />
                 </Card>
+                </Link>
 
-
+                <Link to="/rocketmovies/preview">
             <Card>
                 <h3>Interestellar</h3>
 
@@ -35,8 +38,9 @@ export function CardMovie() {
                 <ButtonText title="Drama" />
                 <ButtonText title="Família" />
                 </Card>
+                </Link>
 
-
+                <Link to="/rocketmovies/preview">
             <Card>
                 <h3>Interestellar</h3>
 
@@ -51,6 +55,7 @@ export function CardMovie() {
                 <ButtonText title="Drama" />
                 <ButtonText title="Família" />
                 </Card>
+                </Link>
 
 
                 </Container>

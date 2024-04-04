@@ -32,6 +32,7 @@ export const Card = styled.div`
 
     h3 {
         font-size: 2.4rem;
+        color: ${({ theme }) => theme.COLORS.WHITE};
     }
 
     P {
