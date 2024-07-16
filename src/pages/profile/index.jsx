@@ -4,8 +4,16 @@ import { FiCamera, FiUser, FiMail, FiLock } from 'react-icons/fi'
 import { Input } from "../../components/input";
 import { Button } from '../../components/button';
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useAuth } from "../../hooks/auth";
 
 export function Profile() {
+    const { user } = useAuth()
+
+    const [name, setName] = useState(user.name)
+    const [email, setEmail] = useState(user.email)
+    const [passwordOld, setPasswordOld] = useState()
+    const [passwordNew, setPasswordNew] = useState()
     return(
         <Container>
             <header>
@@ -28,24 +36,28 @@ export function Profile() {
             type="text"
             placeholder="Lennon Fonseca"
             icon={FiUser}
+            onChange={e => setName(e.target.value)}
             />
 
             <Input 
             type="email"
             placeholder="lennonfonsecaa@gmail.com"
             icon={FiMail}
+            onChange={e => setEmail(e.target.value)}
             />
 
             <Input 
             type="password"
             placeholder="Senha Atual"
             icon={FiLock}
+            onChange={e => setPasswordOld(e.target.value)}
             />
 
             <Input 
             type="text"
             placeholder="Nova Senha"
             icon={FiLock}
+            onChange={e => setPasswordNew(e.target.value)}
             />
 
             <Button title="Salvar" />

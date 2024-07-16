@@ -21,7 +21,7 @@ export const Profile = styled.div`
         color: ${({ theme }) => theme.COLORS.PINK};
     }
 
-    > img {
+    .image {
         width: 6.4rem;
         height: 6.4rem;
         cursor: pointer;

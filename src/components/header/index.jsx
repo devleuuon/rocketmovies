@@ -24,8 +24,9 @@ export function Header() {
                     <span>Sair</span>
                     </Link>
                     </div>
-
-                    <img src="https://github.com/devleuuon.png" alt="foto do usuário" />
+                    <Link to="/rocketmovies/profile">
+                    <img className="image" src="https://github.com/devleuuon.png" alt="foto do usuário" />
+                    </Link>
 
 
             </Profile>
