@@ -2,9 +2,13 @@ import { Container, Profile } from "./styles";
 import { Input } from "../input";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../hooks/auth";
+import { api } from "../../services/api";
 
 export function Header() {
-    const { signOut } = useAuth()
+    const { signOut, user } = useAuth()
+
+    const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
+
     return(
         <Container>
             <Profile>
@@ -17,7 +21,7 @@ export function Header() {
                 <div className="profile">
 
                     <Link to="/rocketmovies/profile">
-                    <strong>Lennon Fonseca</strong>
+                    <strong>{user.name}</strong>
                     </Link>
 
                     <Link onClick={signOut} to="#">
@@ -25,7 +29,7 @@ export function Header() {
                     </Link>
                     </div>
                     <Link to="/rocketmovies/profile">
-                    <img className="image" src="https://github.com/devleuuon.png" alt="foto do usuário" />
+                    <img className="image" src={avatarUrl} alt="foto do usuário" />
                     </Link>
 
 

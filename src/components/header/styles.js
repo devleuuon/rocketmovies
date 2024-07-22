@@ -25,6 +25,7 @@ export const Profile = styled.div`
         width: 6.4rem;
         height: 6.4rem;
         cursor: pointer;
+        border-radius: 50%;
     }
 
     strong {
