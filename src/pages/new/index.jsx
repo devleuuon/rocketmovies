@@ -6,8 +6,26 @@ import { Input } from '../../components/input'
 import { NoteItem } from '../../components/noteitem'
 import { Button } from '../../components/button'
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export function New() {
+    const [tags, setTags] = useState([])
+    const [newTag, setNewTag] = useState('')
+
+    function handleAddTag(){
+
+        if(!newTag){
+            alert('Preencha o campo vazio!')
+        } else {
+            setTags(prevState => [...prevState, newTag])
+        }
+        setNewTag('')
+    }
+
+    function handleRemoveTag(deleted){
+        setTags(prevState => prevState.filter(tag => tag!== deleted))
+    }
+
     return(
         <Container>
             <Header />
@@ -37,9 +55,25 @@ export function New() {
 
                 <Content>
 
+
                 <div className="tags">
-                <NoteItem placeholder="React" />
-                <NoteItem isNew placeholder="Novo marcador"/>
+                    {
+                        tags.map((tag, index) => (
+                            <NoteItem
+                            key={String(index)}
+                            value={tag}
+                            onClick={() => handleRemoveTag(tag) }
+                            />
+                        ))
+                    }
+
+                <NoteItem 
+                isNew 
+                placeholder="Novo marcador"
+                value={newTag}
+                onChange={e => setNewTag(e.target.value)}
+                onClick={handleAddTag}
+                />
                 </div>
 
 
