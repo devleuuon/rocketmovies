@@ -7,6 +7,7 @@ import { CardMovie } from "../../components/card";
 
 
 export function Home() {
+
     return(
         <Container>
             <Header />
